@@ -1,0 +1,105 @@
+.lw { font-size: 60px; }
+
+.wrapper {
+    display: flex;
+}
+
+.head {
+    background-color: dimgray;
+    height: 100px;
+    text-align: left;
+}
+
+#demo{
+    position: relative;
+    color: whitesmoke;
+    height:50%;
+    font-size:50px;
+    top:50%;
+    transform:translateY(-50%);
+    font-family: 'Michroma';
+}
+
+.test{
+    position: relative;
+    margin-top : 10px;
+}
+
+.listOfDirectory{
+    position : relative;
+    clear: both;
+    margin:0px;
+    padding:0px;
+}
+
+.listComponent{
+    float: left;
+    width:180px;
+    margin:0px;
+    padding:0px;
+}
+ul{
+    overflow:auto;
+    margin:0;
+    padding:0;
+}
+
+li{
+    overflow:auto;
+    overflow-x:hidden;
+    display:flex;
+    list-style : none;
+    width:200px;
+    margin:0;
+    padding:0;
+}
+
+button{
+    font-family: 'Share Tech';
+    font-size : 20px;
+    border-color: transparent;
+    background-color: silver;
+}
+
+.folderImage{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.arrowImage{
+    display:block;
+    margin:auto;
+}
+
+.nextDiv{
+    float:inline-end;
+    width:30px;
+    height:175px;
+    margin-left : 5px;
+    display:flex;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.listComponent:hover{
+    margin:0px;
+    padding:0px;
+    width:180px;
+    background-color: darkgrey;
+    animation-duration: 0.7s;
+    animation-name : slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidein{
+    from{
+        margin-left : 0%;
+        width:100%;
+    }
+    to{
+        margin-left: 5%;
+        width:95%;
+    }
+}
